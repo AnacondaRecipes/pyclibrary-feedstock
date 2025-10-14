@@ -11,18 +11,17 @@ source:
   sha256: 8a3eaa9ab728c11b077644275af4e05ca24ddcad491f47eb45b75db6be52c654
 
 build:
-  number: 1
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python
     - pip
-    - python {{ python_min }}
     - setuptools
+    - wheel
   run:
-    - pyparsing >=2.3.1,<4
-    - python >={{ python_min }}
+    - python
+    - pyparsing >=2.4.7,<4
 
 test:
   imports:
@@ -31,8 +30,8 @@ test:
   commands:
     - pip check
   requires:
+    - python
     - pip
-    - python {{ python_min }}
 
 about:
   home: http://github.com/MatthieuDartiailh/pyclibrary
