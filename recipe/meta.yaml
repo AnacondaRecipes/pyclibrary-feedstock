@@ -22,7 +22,7 @@ requirements:
     - wheel
   run:
     - python
-    - pyparsing >=2.4.7,<4
+    - pyparsing >=2.3.1,<4
 
 test:
   imports:
