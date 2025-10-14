@@ -34,11 +34,16 @@ test:
     - pip
 
 about:
-  home: http://github.com/MatthieuDartiailh/pyclibrary
-  summary: C binding automation
+  home: https://github.com/MatthieuDartiailh/pyclibrary
+  dev_url: https://github.com/MatthieuDartiailh/pyclibrary
+  doc_url: https://pyclibrary.readthedocs.io
   license: MIT
+  license_family: MIT
   license_file: LICENSE
-  doc_url: https://pyclibrary.readthedocs.io/en/latest/
+  summary: C parser and ctypes automation for Python
+  description: |
+    PyCLibrary includes 1) a pure-python C parser and 2) an automation library
+    that uses C header file definitions to simplify the use of C bindings.
 
 extra:
   recipe-maintainers:
